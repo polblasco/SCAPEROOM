@@ -1,0 +1,80 @@
+{
+  "start": {
+    "mensaje_inicio": "¡Bienvenido al Scape Room del Goleador Oculto! Completa las pruebas para descubrir el nombre del goleador.",
+    "pruebas": "hay 3 pruebas a realizar donde se ha de hacer un GET al endpoint /prueba1, /prueba2 y /prueba3",
+    "instrucciones": "Para cada prueba, sigue las instrucciones proporcionadas. ¡Buena suerte!"
+  },
+  "prueba1": [
+    {
+      "nombre": "El Misterio del Gol Perdido",
+      "descripcion": "Los jugadores de LaLiga se encuentran frente a una lista de jugadores de fútbol. Deben hacer una petición GET al endpoint /jugadores para obtener la lista completa. Dentro de esta lista, hay un jugador con un gol perdido. Los jugadores tendrán que encontrar a este jugador y hacer una petición PUT para actualizar su información y marcar el gol.",
+      "requisitos_operacion": ["GET", "PUT"],
+      "requisito_condicion": "Comparación de datos para encontrar al jugador con el gol perdido.",
+      "id": "1",
+      "letra": "I"
+    }
+  ],
+  "jugadores": [
+    {
+      "id": 1,
+      "nombre": "Lionel Messi",
+      "equipo": "Inter de Miami",
+      "posicion": "Delantero",
+      "goles": 54,
+      "gol_perdido": false
+    },
+    {
+      "id": 2,
+      "nombre": "Cristiano Ronaldo",
+      "equipo": "Al Nassr",
+      "posicion": "Delantero",
+      "goles": 37,
+      "gol_perdido": false
+    },
+    {
+      "id": 3,
+      "nombre": "Robert Lewandowski",
+      "equipo": "FC Barcelona",
+      "posicion": "Delantero",
+      "goles": 49,
+      "gol_perdido": true
+    },
+    {
+      "id": 4,
+      "nombre": "Karim Benzema",
+      "equipo": "Al Ittihad",
+      "posicion": "Delantero",
+      "goles": 23,
+      "gol_perdido": false
+    },
+    {
+      "id": 5,
+      "nombre": "Youssef En-Nesyri",
+      "equipo": "Sevilla FC",
+      "posicion": "Delantero",
+      "goles": 43,
+      "gol_perdido": false
+    }
+  ],
+  "prueba2": [
+    {
+      "nombre": "El Penalti Decisivo",
+      "descripcion": "Los jugadores reciben una lista de partidos de fútbol con información detallada, incluyendo resultados, jugadores y penaltis. Deben hacer una petición GET al endpoint /matches para obtener la lista. Uno de los partidos contiene un penalti que fue decisivo para el resultado final. Los jugadores deben encontrar este partido y hacer una petición DELETE para eliminar el penalti y cambiar el resultado del partido.",
+      "requisitos_operacion": ["GET", "DELETE"],
+      "requisito_condicion": "Filtrar y comparar resultados para identificar el partido con el penalti decisivo.",
+      "id": "2",
+      "letra": "A"
+    }
+  ],
+  "prueba3": [
+    {
+      "nombre": "La Transferencia Millonaria",
+      "descripcion": "Los jugadores son agentes de fútbol y deben gestionar las transferencias de jugadores entre equipos. Reciben una lista de equipos y jugadores disponibles para transferirse. Deben hacer una petición GET al endpoint /teams para obtener la lista de equipos y POST al endpoint /transfers para confirmar la transferencia de un jugador entre dos equipos.",
+      "requisitos_operacion": ["GET", "POST"],
+      "requisito_condicion": "Combinación de datos para seleccionar los jugadores adecuados para la transferencia.",
+      "id": "3",
+      "letra": "R"
+    }
+  ]
+
+}
